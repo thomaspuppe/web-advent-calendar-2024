@@ -1,0 +1,150 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+
+// TODO: sheould be a real collection with metadata and so on
+const doors = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24];
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+		.calendar-grid {
+			display: grid;
+			gap: 8px;
+			grid-template-columns: repeat(5, 100px [col-start]);
+			grid-template-rows: repeat(12, 100px [row-start]);
+
+
+			list-style: none;
+		}
+		.calendar-grid li {
+			border: 2px green solid;
+		}
+
+
+		.calendar-grid li:nth-child(1) {
+			grid-column: 1 / span 2;
+			grid-row: 1 / span 2;
+		}
+		.calendar-grid li:nth-child(2) {
+			grid-column: 3;
+			grid-row: 7 / span 2;
+		}
+		.calendar-grid li:nth-child(3) {
+			grid-column: 3 / span 2;
+			grid-row: 9 / span 2;
+		}
+		.calendar-grid li:nth-child(4) {
+			grid-column: 4;
+			grid-row: 5;
+		}
+		.calendar-grid li:nth-child(5) {
+			grid-column: 1 / span 2;
+			grid-row: 7;
+		}
+		.calendar-grid li:nth-child(6) {
+			grid-column: 4 / span 2;
+			grid-row: 2 / span 2;
+		}
+		.calendar-grid li:nth-child(7) {
+			grid-column: 5;
+			grid-row: 9 / span 2;
+		}
+		.calendar-grid li:nth-child(8) {
+			grid-column: 1;
+			grid-row: 5 / span 2;
+		}
+		.calendar-grid li:nth-child(9) {
+			grid-column: 1 / span 2;
+			grid-row: 3;
+		}
+		.calendar-grid li:nth-child(10) {
+			grid-column: 3 / span 2;
+			grid-row: 4;
+		}
+		.calendar-grid li:nth-child(11) {
+			grid-column: 1 / span 2;
+			grid-row: 12;
+		}
+		.calendar-grid li:nth-child(12) {
+			grid-column: 3;
+			grid-row: 11 / span 2;
+		}
+		.calendar-grid li:nth-child(13) {
+			grid-column: 4 / span 2;
+			grid-row: 6 / span 2;
+		}
+		.calendar-grid li:nth-child(14) {
+			grid-column: 2;
+			grid-row: 10 / span 2;
+		}
+		.calendar-grid li:nth-child(15) {
+			grid-column: 3 / span 2;
+			grid-row: 1;
+		}
+		.calendar-grid li:nth-child(16) {
+			grid-column: 4 / span 2;
+			grid-row: 11 / span 2;
+		}
+		.calendar-grid li:nth-child(17) {
+			grid-column: 1 / span 2;
+			grid-row: 4;
+		}
+		.calendar-grid li:nth-child(18) {
+			grid-column: 5;
+			grid-row: 4 / span 2;
+		}
+		.calendar-grid li:nth-child(19) {
+			grid-column: 5;
+			grid-row: 1;
+		}
+		.calendar-grid li:nth-child(20) {
+			grid-column: 1 / span 2;
+			grid-row: 8 / span 2;
+		}
+		.calendar-grid li:nth-child(21) {
+			grid-column: 4 / span 2;
+			grid-row: 8;
+		}
+		.calendar-grid li:nth-child(22) {
+			grid-column: 3;
+			grid-row: 2 / span 2;
+		}
+		.calendar-grid li:nth-child(23) {
+			grid-column: 1;
+			grid-row: 10 / span 2;
+		}
+		.calendar-grid li:nth-child(24) {
+			grid-column: 2 / span 2;
+			grid-row: 5 / span 2;
+		}
+
+		</style>
+	</head>
+	<body>
+		<Header />
+
+		<main>
+			Ho ho ho
+
+			<ol class="calendar-grid">
+
+					{
+						doors.map((door) => (
+							<li>
+								{ door }
+							</li>
+						))
+					}
+
+			</ol>
+
+		</main>
+		<Footer />
+	</body>
+</html>
