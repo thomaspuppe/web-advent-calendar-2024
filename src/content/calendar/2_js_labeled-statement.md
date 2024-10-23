@@ -23,3 +23,4 @@ loop1: for (let i = 0; i < 3; i++) {
 }
 ```
 
+Source: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/label
