@@ -1,11 +1,17 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
+import { getCollection } from 'astro:content';
 
-// TODO: sheould be a real collection with metadata and so on
+// TODO: Use the real collection with metadata and so on for looping
+// TODO: Enter the position into the frontmatter, use it vor vars, and use this for rotating the calendar
 const doors = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24];
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => b.data.slug - a.data.slug,
+);
 ---
 
 <!doctype html>
@@ -133,11 +139,10 @@ const doors = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24];
 			Ho ho ho
 
 			<ol class="calendar-grid">
-
 					{
 						doors.map((door) => (
 							<li>
-								{ door }
+								<a href={`/calendar/${door}/`}>{ door }</a>
 							</li>
 						))
 					}
