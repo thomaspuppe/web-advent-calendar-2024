@@ -1,0 +1,6 @@
+---
+const { post } = Astro.props;
+---
+<li>
+	<a href={`/${post.slug}/`} >{post.slug}</a>
+</li>
