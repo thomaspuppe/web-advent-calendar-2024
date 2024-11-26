@@ -1,6 +1,6 @@
 ---
 const { post } = Astro.props;
 ---
-<li>
+<li class={post.data.category.toLowerCase()}>
 	<a href={`/${post.slug}/`} >{post.slug}</a>
 </li>
