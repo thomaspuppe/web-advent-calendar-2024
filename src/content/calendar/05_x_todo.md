@@ -1,6 +1,6 @@
 ---
 slug: '5'
-category: 'TODO'
+category: 'JS'
 title: 'TODO'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Dec 05 2024'

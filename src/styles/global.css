@@ -154,7 +154,9 @@ hr {
 }
 
 
-
+		body {
+			background: #B0E0E6;
+		}
 
 		.calendar-grid {
 			display: grid;
@@ -166,7 +168,36 @@ hr {
 			list-style: none;
 		}
 		.calendar-grid li {
-			border: 2px green solid;
+			border: 2px #4682B4 dashed;
+			display: flex; /* to stretch the inline child */
+		}
+
+		/* children can be links or spands (dependent on opened door via the date) */
+		.calendar-grid li > * {
+			color: inherit;
+			flex-grow: 1;  /* to fill the parent */
+			font-family: Didot, 'Bodoni MT', 'Noto Serif Display', 'URW Palladio L', P052, Sylfaen, serif;
+			font-size: 36px;
+			font-weight: bold;
+			padding: 1.2ch;
+			text-decoration: none;
+		}
+
+		.calendar-grid li.html {
+			background: #FF4500;
+			color: #FFFFFF;
+		}
+		.calendar-grid li.css {
+			background: #FFD700;
+			color: #8B4513;
+		}
+		.calendar-grid li.js {
+			background: #228B22;
+			color: #FFFFFF;
+		}
+		.calendar-grid li.todo {
+			background: #A9A9A9;
+			color: #000000;
 		}
 
 

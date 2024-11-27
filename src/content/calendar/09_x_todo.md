@@ -1,6 +1,6 @@
 ---
 slug: '9'
-category: 'TODO'
+category: 'CSS'
 title: 'TODO'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Dec 09 2024'
