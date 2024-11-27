@@ -18,6 +18,7 @@ const posts = (await getCollection('calendar')).sort(
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<script type="module" src="/snow-fall.js"></script>
 	</head>
 	<body>
 		<Header />
@@ -35,5 +36,6 @@ const posts = (await getCollection('calendar')).sort(
 			
 		</main>
 		<Footer />
+		<snow-fall></snow-fall>
 	</body>
 </html>
