@@ -4,6 +4,7 @@ category: 'HTML'
 title: 'List Reversal'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Dec 01 2024'
+published: True
 ---
 
 TODO: Text
