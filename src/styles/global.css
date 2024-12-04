@@ -116,6 +116,8 @@ pre {
 }
 pre > code {
 	all: unset;
+	display: block;
+  max-width: calc(100vw - 6em);
 }
 blockquote {
 	border-left: 4px solid var(--accent);
@@ -127,14 +129,7 @@ hr {
 	border: none;
 	border-top: 1px solid rgb(var(--gray-light));
 }
-@media (max-width: 720px) {
-	body {
-		font-size: 18px;
-	}
-	main {
-		padding: 1em;
-	}
-}
+
 
 
 		body {
@@ -169,8 +164,8 @@ hr {
 		.calendar-grid {
 			display: grid;
 			gap: 8px;
-			grid-template-columns: repeat(5, 100px [col-start]);
-			grid-template-rows: repeat(12, 100px [row-start]);
+			grid-template-columns: repeat(5, 1fr [col-start]);
+			grid-template-rows: repeat(12, 1fr [row-start]);
 			list-style: none;
 			padding: 0;
 		}
@@ -304,3 +299,15 @@ hr {
 			grid-column: 2 / span 2;
 			grid-row: 5 / span 2;
 		}
+
+@media (max-width: 720px) {
+	body {
+		font-size: 18px;
+	}
+	main {
+		padding: 1em;
+	}
+	.calendar-grid li > * {
+		font-size: 24px;
+	}
+}

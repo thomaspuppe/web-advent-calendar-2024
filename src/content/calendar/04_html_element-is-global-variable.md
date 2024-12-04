@@ -7,9 +7,7 @@ pubDate: 'Dec 04 2024'
 published: true
 ---
 
-Something I learned from [Flavio Copes](
-
-Source: https://flaviocopes.com/an-html-element-id-is-a-global-variable/):
+Something I learned from [Flavio Copes](https://flaviocopes.com/an-html-element-id-is-a-global-variable/):
 
 Every HTML element with an ID can be accessed from your JS as global variable.
 

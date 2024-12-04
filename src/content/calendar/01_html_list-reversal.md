@@ -24,7 +24,7 @@ So this is the default order:
 </ol>
 ```
 
-<div style="font-size:smaller;padding-left:2em">
+<div style="font-size:smaller; margin:-2em auto 3em; padding: 1em 1em 1em 2em; border:2px #24292e dashed;">
 <h2>So how do you make gingerbread cookies? It’s simple!</h2>
 <ol>
 	<li>Whisk together your dry ingredients.</li>
@@ -52,7 +52,7 @@ With the `reversed` attribute, you can change the order to be counting down:
 </ol>
 ```
 
-<div style="font-size:smaller;padding-left:2em">
+<div style="font-size:smaller; margin:-2em auto 3em; padding: 1em 1em 1em 2em; border:2px #24292e dashed;">
 <h2>Top 6 Christmas Songs</h2>
 <ol reversed>
 	<li>Judy Garland, “Have Yourself a Merry Little Christmas” (1944)</li>
