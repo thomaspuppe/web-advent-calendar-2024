@@ -112,6 +112,7 @@ code {
 pre {
 	padding: 1.5em;
 	border-radius: 8px;
+	margin-bottom: 3em;
 }
 pre > code {
 	all: unset;
@@ -145,6 +146,9 @@ hr {
 		background: white;
 		box-shadow: 0 2px 8px rgba(var(--black), 5%);
 		text-align: center;
+	}
+	header a {
+		text-decoration: none;
 	}
 	header h1 {
 		font-family: Didot, 'Bodoni MT', 'Noto Serif Display', 'URW Palladio L', P052, Sylfaen, serif;
