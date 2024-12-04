@@ -2,12 +2,14 @@
 slug: '1'
 category: 'HTML'
 title: 'List Reversal'
-description: 'Lorem ipsum dolor sit amet'
+description: 'Revert ordered listst in HTML'
 pubDate: 'Dec 01 2024'
-published: True
+published: true
 ---
 
-TODO: Text
+Ordered lists in HMTL can be reversed. You can switch from increasing order to decreasing order with the `reversed` attribute on the `ol` tag.
+
+So this is the default order:
 
 
 ```html
@@ -22,6 +24,7 @@ TODO: Text
 </ol>
 ```
 
+<div style="font-size:smaller;padding-left:2em">
 <h2>So how do you make gingerbread cookies? It’s simple!</h2>
 <ol>
 	<li>Whisk together your dry ingredients.</li>
@@ -31,9 +34,10 @@ TODO: Text
 	<li>Bake.</li>
 	<li>Decorate.</li>
 </ol>
+</div>
 
 
-TODO: Text
+With the `reversed` attribute, you can change the order to be counting down:
 
 
 ```html
@@ -48,6 +52,7 @@ TODO: Text
 </ol>
 ```
 
+<div style="font-size:smaller;padding-left:2em">
 <h2>Top 6 Christmas Songs</h2>
 <ol reversed>
 	<li>Judy Garland, “Have Yourself a Merry Little Christmas” (1944)</li>
@@ -57,5 +62,4 @@ TODO: Text
 	<li>Wham!, “Last Christmas” (1984)</li>
 	<li>Mariah Carey, “All I Want For Christmas Is You” (1994)</li>
 </ol>
-
-TODO: Text
+</div>
