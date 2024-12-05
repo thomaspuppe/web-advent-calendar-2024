@@ -7,7 +7,7 @@ pubDate: 'Dec 06 2024'
 published: true
 ---
 
-Since May 2024, we can use `round()` for handling values. This is a "math function" like `calc()`, `min()` or `clamp()`.
+Since May 2024, we can use `round()` for handling values. This is a math function like `calc()`, `min()` or `clamp()`.
 
 ```css
 --givenWidth: 128px;
@@ -24,9 +24,10 @@ width: round(to-zero, 140px, var(--rounding-interval)); // -> 100px
 width: round(to-zero, -140px, var(--rounding-interval)); // -> -100px
 ```
 
-This only makes sense if you have a variable part. Otherwise you could just round while writing the CSS and hardcode the value. Examples:
+Rounding only makes sense if you have a variable part. Otherwise you could just round while writing the CSS and hardcode the value. Examples:
 
-- Width/height of an element is given by measuring via JS.
+- Width/height of an element is set via JS.
 - The interval can be set to custom values by selecting a narrow/spacious theming.
+- Art
 
 Source: https://developer.mozilla.org/en-US/docs/Web/CSS/round
