@@ -300,6 +300,19 @@ hr {
 			grid-row: 5 / span 2;
 		}
 
+	footer {
+		padding: 2em 1em 6em 1em;
+		background: linear-gradient(var(--gray-gradient)) no-repeat;
+		color: rgb(var(--gray));
+		text-align: center;
+	}
+	footer a,
+	footer a:hover {
+		text-decoration: none;
+		color: rgb(var(--gray));
+	}
+
+
 @media (max-width: 720px) {
 	body {
 		font-size: 18px;
@@ -420,3 +433,29 @@ hr {
 			grid-column: 5 / span 2;
 		}
 }
+
+
+			main {
+				width: calc(100% - 2em);
+				max-width: 100%;
+				margin: 0;
+			}
+			.prose {
+				width: min(720px, calc(100% - 2em));
+				margin: auto;
+				padding: 1em;
+				color: rgb(var(--gray-dark));
+			}
+			.title {
+				margin-bottom: 1em;
+				padding: 1em 0;
+				text-align: center;
+				line-height: 1;
+			}
+			.title h1 {
+				margin: 0 0 0.5em 0;
+			}
+			.date {
+				margin-bottom: 0.5em;
+				color: rgb(var(--gray));
+			}
