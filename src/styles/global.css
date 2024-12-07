@@ -454,6 +454,7 @@ hr {
 			}
 			.title h1 {
 				margin: 0 0 0.5em 0;
+				word-break: break-word;
 			}
 			.date {
 				margin-bottom: 0.5em;
