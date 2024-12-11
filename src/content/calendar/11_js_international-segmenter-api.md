@@ -147,7 +147,7 @@ const segments = Array.from(segmentsIterator).map((segment) => segment.segment);
 ]
 ```
 
-Last but not least, there is a third granularity of segmentation? The `graphene`. The only examples for this I could find are emojis. Emojis consist of unicode parts, making them hard to split. 
+Last but not least, there is a third granularity of segmentation? The `grapheme`. The only examples for this I could find are emojis. Emojis consist of unicode parts, making them hard to split. 
 
 ```javascript
 '⛔⛈️🙂😵💫'.split('');
@@ -158,7 +158,7 @@ But with a Segmenter, you can do it.
 
 ```javascript
 const myString = "⛔⛈️🙂😵💫";
-const segmenter = new Intl.Segmenter("de", { granularity: "word" });
+const segmenter = new Intl.Segmenter("de", { granularity: "grapheme" });
 const segmentsIterator = segmenter.segment(myString);
 const segments = Array.from(segmentsIterator).map((segment) => segment.segment);
 // 👇
