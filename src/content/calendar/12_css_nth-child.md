@@ -39,6 +39,8 @@ pre {margin: 1em;}
 </div>
 
 
+But there is a lesser-known cool feature.
+
 The `nth-child` selector also supports a filter selector, that lets you select the nth child matching that selector:
 
 ```html
