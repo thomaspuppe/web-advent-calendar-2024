@@ -2,5 +2,5 @@
 const { post } = Astro.props;
 ---
 <li class={post.data.category.toLowerCase()}>
-	{post.data.published ? <a href={`/${post.slug}/`} >{post.slug}</a> : <span>{post.slug}</span> }
+	{post.data.published ? <a href={`/${post.slug}/`} title={post.data.title}>{post.slug}</a> : <span>{post.slug}</span> }
 </li>
