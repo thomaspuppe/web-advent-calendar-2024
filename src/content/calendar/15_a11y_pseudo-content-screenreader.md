@@ -8,7 +8,7 @@ published: true
 ---
 
 
-[Yesterday](/14/), I explored styling `::marker elements for li and summary tags, including how to change their content. 
+[Yesterday](/14/), I explored styling `::marker` elements for li and summary tags, including how to change their content. 
 
 <style>
 summary { cursor: pointer; }
