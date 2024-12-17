@@ -9,7 +9,7 @@ published: true
 
 If you build a form, usually you include all form elements below the `<form>` DOM node. That way, these inputs and controls are directly associated with the form.
 
-If you – for any design reasons reason – want to move some form elements outside the surrounding `form` element, that connection would break. But: There is a `form` **Attribute** that you can use to connect input elements and form controls to a specific form.
+If you – for any design reasons reason – want to move some form elements outside the surrounding `form` node, that connection would break. But: There is a `form` **Attribute** that you can use to connect input elements and form controls to a specific form.
 
 ```html
 <form id="payment-form" action="/payment" method="POST">
