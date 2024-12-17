@@ -29,6 +29,6 @@ You can use the same syntax to provide different image formats depending on the 
 }
 ```
 
-That way you can serve modern performant images (avif, webp) to modern browsers. And at the same time have a fallback of established formats (webp, jpg) for older browsers.
+That way you can serve modern performant images (avif, webp) to modern browsers. And at the same time have a fallback of established formats (png, jpg) for older browsers.
 
 Source: https://developer.mozilla.org/de/docs/Web/CSS/image/image-set
