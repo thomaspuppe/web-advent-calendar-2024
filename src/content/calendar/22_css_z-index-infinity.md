@@ -7,6 +7,8 @@ pubDate: 'Dec 22 2024'
 published: true
 ---
 
+<style>main { overflow-x: hidden }</style>
+
 Sometimes, especially with third party code on your site, you enter a race for the highest z-index. People top each other with `z-index: 9999999;` and `z-index: 99999999 !important;`.
 
 You can end and win that game by doing
